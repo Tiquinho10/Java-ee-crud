@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Pessoas</title>
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+    <body>
+       <div class="container">
+        <h1>Lista de Pessoas</h1>
+
+
+      
+       <div class="table-container">
+          <button id="btn_add" >Adicionar Pessoa</button>
+        <p class="txt"></p>
+          <table  class="table-content" >
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                    <th>Endereco</th>
+                    <th>Sexo</th>
+                    <th>Acoes</th>
+                </tr>
+            </thead>
+            <tbody class="pessoa-table">
+            </tbody>
+        </table>
+       </div>
+
+        <!-- modal -->
+        <div class="modal-bg">
+            <div class="modal">
+
+               
+
+                 <input id="id" name="id" type="hidden"> 
+                 <h2 class="caption"></h2>
+
+                <div class="input-control"> 
+                    <label for="nome">Nome</label>
+                    <input id="nome" name="nome" type="text" required>
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="telefone">Telefone</label>
+                    <input id="telefone" name="telefone" type="text" required >
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="endereco">Endereco</label>
+                    <input id="endereco" name="endereco" type="text"  required>
+                    <div class="error"></div>
+                </div>
+
+                <div class="input-control">
+                    <label for="sexo">Sexo</label>
+                    <select id="sexo" name="sexo" required="">
+                        <option value="0" > Selecione o sexo</option>
+                        <option value="F">Feminino</option>  
+                        <option value="M">Masculino</option>  
+                    </select>
+                    <div class="error"></div>
+                </div>       
+
+
+                <button id="submit">enviar</button>
+
+                <button class="close-btn">x</button>
+
+            </div>
+        </div>
+       </div>
+       
+        <script src="scripts/api.js"></script> 
+
+
+
+
+
+    </body>
+</html>
